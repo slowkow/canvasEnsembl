@@ -2,7 +2,7 @@
 
 body {
   padding:50px;
-  font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font:14px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#777;
   font-weight:300;
 }
@@ -46,7 +46,7 @@ a small {
 }
 
 .wrapper {
-  width:860px;
+  width:90%;
   margin:0 auto;
 }
 
@@ -96,7 +96,7 @@ img {
 }
 
 header {
-  width:270px;
+  width:33%;
   float:left;
   position:fixed;
 }
