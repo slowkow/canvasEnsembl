@@ -73,8 +73,8 @@ img.CanvasXpressCode {
   float: right;
   height: 13px;
   margin: 2px 3px 0px 0px;
+  padding-bottom: 5px;
   width: 13px;
-  cursor: default;
   -moz-user-select: none;
   -khtml-user-select: none;
   -webkit-user-select: none;
@@ -82,15 +82,23 @@ img.CanvasXpressCode {
   -user-select: none;
 }
 div.CanvasXpressCodeContainer {
+  background-color: rgb(240,240,240);
   clear: both;
-  height: 400px;
+  max-height: 500px;
+  max-width: 600px;
   overflow: auto;
-  width: 325px;
-  resize: both;
 }
 div.CanvasXpressCodeContent {
+  background-color: rgb(240,240,240);
   margin: 2px 3px;
   padding: 2px 3px;
+}
+pre.CanvasXpressCodeContent {
+  background-color: rgb(240,240,240);
+  border: none;
+  margin: 0px;
+  padding: 10px;
+  white-space: pre;
 }
 /* Dragging div */
 div.CanvasXpressDrag {
@@ -178,7 +186,6 @@ img.CanvasXpressDataTableToolbarImage {
   height: 13px;
   margin: 2px 3px 0px 0px;
   width: 13px;
-  cursor: default;
   -moz-user-select: none;
   -khtml-user-select: none;
   -webkit-user-select: none;
@@ -449,6 +456,25 @@ input.CanvasXpressConfiguratorFilter {
   border: 1px solid rgb(113,139,183);
   font: normal 11px arial, tahoma, sans-serif;
   line-height: 16px;
+}
+div.CanvasXpressConfiguratorExample {
+  background-color: rgb(240,240,240);
+  border-radius: 5px;
+  border: 1px solid rgb(113,139,183);
+  box-shadow: rgba(154,154,154,0.2) 3px 3px;
+  color: rgb(34,34,34);
+  font: normal 11px arial, tahoma, sans-serif;
+  line-height: 16px;
+}
+span.CanvasXpressConfiguratorExample{
+  cursor: default;
+  font: normal 11px arial,tahoma,sans-serif;
+  line-height: 16px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  -user-select: none;
 }
 div.CanvasXpressConfiguratorColor {
   border: 1px solid rgb(113,139,183);
