@@ -7212,7 +7212,7 @@ function validateEmail(form_id) {
 function contactClick(id, url, success) {
   if(validateEmail(id)) {
     $('contactButton').hide();
-    $('sendingForm').show();
+    $('c_sendingForm').show();
     data = $(id).serialize();
     new Ajax.Request(url, {
       method : 'post',
@@ -7222,7 +7222,7 @@ function contactClick(id, url, success) {
       onSuccess : function(result) {
         $(success).innerHTML = result.responseText;
         $('contactButton').show();
-        $('sendingForm').hide();
+        $('c_sendingForm').hide();
         $('c_name').value = '';
         $('c_mail').value = '';
         $('c_message').value = '';
@@ -7230,7 +7230,7 @@ function contactClick(id, url, success) {
       onFailure : function(result) {
         alert(result.responseText);
         $('contactButton').show();
-        $('sendingForm').hide();
+        $('c_sendingForm').hide();
         $('c_name').value = '';
         $('c_mail').value = '';
         $('c_message').value = '';
@@ -7244,7 +7244,7 @@ function contactClick(id, url, success) {
 function downloadClick(id, url, success) {
   if(validateEmail(id)) {
     $('downloadButton').hide();
-    $('sendingForm').show();
+    $('d_sendingForm').show();
     data = $(id).serialize();
     new Ajax.Request(url, {
       method : 'post',
@@ -7254,14 +7254,14 @@ function downloadClick(id, url, success) {
       onSuccess : function(result) {
         $(success).innerHTML = result.responseText;
         $('downloadButton').show();
-        $('sendingForm').hide();
+        $('d_sendingForm').hide();
         $('d_name').value = '';
         $('d_mail').value = '';
       },
       onFailure : function(result) {
         alert(result.responseText);
         $('downloadButton').show();
-        $('sendingForm').hide();
+        $('d_sendingForm').hide();
         $('d_name').value = '';
         $('d_mail').value = '';
       }
