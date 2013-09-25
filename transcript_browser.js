@@ -158,7 +158,7 @@ $(document).ready(function() {
     }
 
     // Initialize to some gene.
-    drawPlot('ENSG00000157764');
+    drawPlot('ENSG00000204613');
 
     // Update the plot when the form is submitted.
     $('form').submit(function() {
